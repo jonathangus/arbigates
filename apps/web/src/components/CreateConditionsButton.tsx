@@ -45,9 +45,9 @@ const CreateConditionsButton = ({ gatedConditions = [] }: Props) => {
   //   // `the-graph:minENSs:${JSON.stringify({
   //   //   minNumber: 2,
   //   // })}`,
-    `quicknode:ownsNFT:${JSON.stringify({
-      contractAddress: '0x745fc083f4336a4151c76de9f598e0f67991c3fa', // mems
-    })}`,
+  // `quicknode:ownsNFT:${JSON.stringify({
+  //   contractAddress: '0x745fc083f4336a4151c76de9f598e0f67991c3fa', // mems
+  // })}`,
   //   // `api:get:${JSON.stringify(apiData)}`,
   //   // `the-graph:query:${JSON.stringify(theGraph)}`,
   //   // `quicknode:ownsNFT:${JSON.stringify({

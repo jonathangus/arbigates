@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/ArbiGates.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.14;\n\ncontract ArbiGates {\n    uint256 count = 0;\n    mapping(uint256 => bytes) public conditions;\n\n    event Created(uint256 gateId, address creator);\n\n    function add(bytes calldata _conditions) public {\n        conditions[count] = _conditions;\n        emit Created(count, msg.sender);\n        count++;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
