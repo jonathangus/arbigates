@@ -134,7 +134,7 @@ const LogoHeader = () => {
         <Text weight={500}>create</Text>
       </UnstyledButton> */}
 
-      <ConnectedWalletInfo isMobile={isMobile} />
+      {/* <ConnectedWalletInfo isMobile={isMobile} /> */}
     </div>
   );
 };
